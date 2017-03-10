@@ -1,0 +1,11 @@
+webui:
+  build: .
+  container_name: easywi-web
+  restart: unless-stopped
+
+  volumes:
+  - ~/easywi-data/sql:/var/lib/mysql
+  - ~/easywi-data/html:/var/www/html
+
+  ports:
+    - 8282:80
