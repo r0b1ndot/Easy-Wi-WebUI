@@ -31,5 +31,5 @@ docker-compose up -d
 Boom.. there you go.  
 
 ### MySQL Infomation
-The database to use is `easywi`
+The database to use is `easywi`.  
 The user is `root` and password is `easywi`.
