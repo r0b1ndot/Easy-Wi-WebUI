@@ -19,6 +19,7 @@ docker run --name easy-wi \
   -p 8282:80 \
   -v ~/easywi-data/html:/var/www/html \
   -v ~/easywi-data/sql:/var/lib/mysql \
+  --restart=always \
   -d easywi-image
 ```
 
