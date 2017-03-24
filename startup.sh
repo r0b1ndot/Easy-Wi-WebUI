@@ -90,7 +90,9 @@ if [ ! -f /var/setup_complete ]; then
   SETUP_EW
   echo -e "\nSetup is completed.."
 fi
-
+echo "Starting Cron"
+/etc/init.d/cron start
+echo
 echo "Starting Apache2..."
 rm -f /var/run/apache2/apache2.pid
 /usr/sbin/apache2ctl -D FOREGROUND
