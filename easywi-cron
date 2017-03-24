@@ -3,8 +3,8 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-0 */1 * * * changeToPHPUser cd /var/www/html && timeout 300 php ./reboot.php >/dev/null 2>&1
-*/5 * * * * changeToPHPUser cd /var/www/html && timeout 290 php ./statuscheck.php >/dev/null 2>&1
-*/1 * * * * changeToPHPUser cd /var/www/html && timeout 290 php ./startupdates.php >/dev/null 2>&1
-*/5 * * * * changeToPHPUser cd /var/www/html && timeout 290 php ./jobs.php >/dev/null 2>&1
-*/10 * * * * changeToPHPUser cd /var/www/html && timeout 290 php ./cloud.php >/dev/null 2>&1
+0 */1 * * * www-data cd /var/www/html && timeout 300 php ./reboot.php >/dev/null 2>&1
+*/5 * * * * www-data cd /var/www/html && timeout 290 php ./statuscheck.php >/dev/null 2>&1
+*/1 * * * * www-data cd /var/www/html && timeout 290 php ./startupdates.php >/dev/null 2>&1
+*/5 * * * * www-data cd /var/www/html && timeout 290 php ./jobs.php >/dev/null 2>&1
+*/10 * * * * www-data cd /var/www/html && timeout 290 php ./cloud.php >/dev/null 2>&1
