@@ -93,6 +93,9 @@ fi
 echo "Starting Cron"
 /etc/init.d/cron start
 echo
+echo "Starting MySQL"
+/etc/init.d/cron start
+echo
 echo "Starting Apache2..."
 rm -f /var/run/apache2/apache2.pid
 /usr/sbin/apache2ctl -D FOREGROUND
